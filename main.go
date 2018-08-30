@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var secretKey = "TwliyMEXai"
+var secretKey = "your-secret-key"
 
 func validate(req *http.Request) (*jwt.Token, error) {
 	return request.ParseFromRequest(req, request.OAuth2Extractor, func(token *jwt.Token) (interface{}, error) {
